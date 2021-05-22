@@ -1,29 +1,37 @@
 @font-face {
   font-family: "Minecraftia";
-  src: url('fonts/Minecraftia.woff') format('woff'),
-       url('fonts/Minecraftia.ttf')  format('truetype');
-  font-style: normal;
-  font-weight: 100;
+  src: url('fonts/Minecraftia.ttf') format('truetype');
 }
 
 body {
-    font-family: "Minecraftia", Fallback, sans-serif;
-    font-size: 24px;
-    font-weight: 100;
+  font-family: "Minecraftia", Fallback, sans-serif;
+  font-size: 24px;
 }
 
-
 .refs {
+  top: 8px;
+  padding: 6px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* Minecraft styled border */
   border-style: solid;
   border-top-color: FFFFFF;
   border-left-color: FFFFFF;
   border-bottom-color: 373737;
   border-right-color: 373737;
+  background-color: C6C6C6;
+  /* Sticky */
   position: -webkit-sticky;
   position: sticky;
-  padding: 6px;
-  background-color: C6C6C6;
-  top: 8px;
+  /* Horizontal navbar */
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.refs::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .refs img:hover {
@@ -31,6 +39,7 @@ body {
 }
 
 .refs a {
+  margin-right: 6px;
   display: inline-block;
   vertical-align: top;
   background-color: 8B8B8B;
@@ -51,7 +60,7 @@ body {
 }
 
 .title {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
